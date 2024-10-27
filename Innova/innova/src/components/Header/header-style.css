@@ -1,0 +1,40 @@
+#menu{
+    background-color: #071C37;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu ul{
+    margin-top: .8rem;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+#menu li{
+    transition: ease-in-out 1s;
+}
+
+#menu li:hover{
+    color: #00E6D2;
+}
+
+#menu img{
+    width: 4rem;
+}
+
+.burger-icon{
+    display:none;
+    margin-top: .8rem;
+}
+
+@media screen and (width <= 558px){
+    #menu ul{
+        display: none;
+    }
+
+    .burger-icon{
+        display: block;
+    }
+}

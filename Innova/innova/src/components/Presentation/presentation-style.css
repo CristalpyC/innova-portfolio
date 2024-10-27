@@ -1,0 +1,108 @@
+#presentation-container{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    padding: 2rem;
+}
+
+
+.info-container h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.info-container p{
+    font-size: 1.3rem;
+    width: 90%;
+}
+
+.social-media-container{
+    display: flex;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+.social-media-container a{
+    color: #fff;
+    border: solid 2px #13958b;
+    border-radius: 1.5rem;
+    padding: 8px;
+    transition: ease-in-out 2s;
+}
+
+.social-media-container a:hover{
+    background-color: #13958b;
+}
+
+
+.presentation-imgs-container{
+    width: 100%;
+}
+
+.presentation-imgs-container img{
+    width: 25rem;
+    /*border-radius: 5rem;*/
+}
+
+.presentation-mobile-img{
+    display: none;
+}
+
+
+@media screen and (width <= 866px){
+    #presentation-container{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 0px;
+    }
+
+    .info-container p{
+        width: 100%;
+    }
+
+    .social-media-container {
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .presentation-imgs-container{
+        margin-top: 2.5rem;
+    }
+}
+
+@media screen and (width <= 490px){
+    .info-container h2{
+        font-size: 2rem;
+    }
+
+    .presentation-imgs-container{
+        display: none;
+    }
+
+    .presentation-mobile-img{
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .presentation-mobile-img img{
+        width: 100%;
+    }
+
+    .israel-img{
+        margin-bottom: 1rem;
+    }
+
+    .cristal-img{
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (width <= 944px){
+    .presentation-imgs-container img{
+        margin-top: 2rem;
+        width: 20rem;
+    }
+    }
